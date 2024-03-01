@@ -1,0 +1,22 @@
+.table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 0 auto;
+	font-family: Arial, sans-serif;
+}
+
+.tableHeader {
+	background-color: #f2f2f2;
+	font-weight: bold;
+}
+
+.tableHeaderCell,
+.tableCell {
+	padding: 10px;
+	border: 1px solid #ddd;
+	text-align: left;
+}
+
+.tableCell {
+	font-size: 14px;
+}

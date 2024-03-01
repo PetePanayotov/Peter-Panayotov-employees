@@ -1,0 +1,35 @@
+.dragableZone {
+	height: 280px;
+	width: 360px;
+	border: 8px dotted #3178c6;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.uploadBtn {
+	border: 1px solid #3178c6;
+	outline: none;
+}
+
+.uploadBtn:hover {
+	cursor: pointer;
+}
+
+.uploadBtn:active {
+	outline: none;
+}
+
+.uploadBtn label:hover {
+	cursor: pointer;
+}
+
+.warning {
+	color: #f23939;
+	font-size: 14px;
+	position: absolute;
+	bottom: 0;
+}
