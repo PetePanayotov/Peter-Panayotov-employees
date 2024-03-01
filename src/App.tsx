@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import './App.css';
 import { getMaxOverlap } from './utils/getMaxOverlap';
 import { Tabel } from './components/Table';
@@ -48,7 +48,7 @@ function App() {
 		reader.readAsText(file);
 	};
 
-	const maxOverlap = getMaxOverlap(csvData);
+	const maxOverlap = useMemo(() => getMaxOverlap(csvData), [csvData]);
 
 	return (
 		<div className="page-wrapper">
